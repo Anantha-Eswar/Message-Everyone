@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="Share this App"
+        android:icon="@drawable/ic_share_white_48pt_3x"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_rate"
+        android:orderInCategory="101"
+        android:title="Rate this App"
+        android:icon="@drawable/ic_star_rate_white_18pt_3x"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_changelog"
+        android:orderInCategory="103"
+        android:title="ChangeLog"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="104"
+        android:title="About"
+        app:showAsAction="never" />
+</menu>

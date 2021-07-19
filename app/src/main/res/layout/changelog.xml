@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#37474F">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.2"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:text=" • Added In-App Google +1 recommend button\n\n\ • Added two new Categories\n\t - Abbreviation messages\n\t - Christmas messages\n\n • Some minor fixes &amp; changes in Design (Snackbar from Material Design, etc).\n" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.1"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF9800"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:text=" • Added two new Categories\n\t - Joke messages\n\t - New Year messages\n\n • Added &quot;What's New&quot; startup dialog and an option to see it later.\n\n • Corrected some misspelt words &amp; repeated messages.\n" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#50FF9800"></View>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

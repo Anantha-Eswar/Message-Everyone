@@ -1,0 +1,223 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anantheswar.messageeveryone">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme"
+        android:name=".Analytics"
+        android:largeHeap="true">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".Message_Everyone"
+            android:label="Message Everyone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Birthday"
+            android:label="Birthday messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Friendship"
+            android:label="Friendship messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Love"
+            android:label="Love messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".GoodMorning"
+            android:label="Good Morning messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Sorry"
+            android:label="Sorry messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".GoodEvening"
+            android:label="Good Evening messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".ValentineDay"
+            android:label="Valentine's day messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Prayer"
+            android:label="Prayer messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Exam"
+            android:label="Exam messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Forget"
+            android:label="Forget messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Dream"
+            android:label="Dream messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Angry"
+            android:label="Angry messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Diwali"
+            android:label="Diwali messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".GoodAfternoon"
+            android:label="Good Afternoon messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Funny"
+            android:label="Funny messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Emotional"
+            android:label="Emotional messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Cute"
+            android:label="Cute messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".GoodNight"
+            android:label="Good night messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".MissingYou"
+            android:label="Missing you messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Advice"
+            android:label="Advice messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Caring"
+            android:label="Caring messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".About"
+            android:label="About"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".NewYear"
+            android:label="New Year messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Joke"
+            android:label="Joke messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".ChangeLog"
+            android:label="ChangeLog"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Christmas"
+            android:label="Christmas messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".Abbreviation"
+            android:label="Abbreviation messages"
+            android:parentActivityName=".Message_Everyone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message_Everyone" />
+        </activity>
+        <activity android:name=".ShareThisApp"
+            android:label="Share this App">
+        </activity>
+
+    </application>
+
+</manifest>

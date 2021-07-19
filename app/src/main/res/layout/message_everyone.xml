@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="abbreviationLayout">
+
+                <ImageView
+                    android:id="@+id/abbreviationImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/abbreviation" />
+
+                <TextView
+                    android:id="@+id/abbreviationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/abbreviationImage"
+                    android:text="Abbreviation messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/abbreviationIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/abbreviationText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/abbreviationImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/abbreviationTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abbreviationText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/abbreviationIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="adviceLayout">
+
+                <ImageView
+                    android:id="@+id/adviceImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/advice" />
+
+                <TextView
+                    android:id="@+id/adviceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/adviceImage"
+                    android:text="Advice messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/adviceIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/adviceText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/adviceImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/adviceTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adviceText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/adviceIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="angryLayout">
+
+                <ImageView
+                    android:id="@+id/angryImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/angry" />
+
+                <TextView
+                    android:id="@+id/angryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/angryImage"
+                    android:text="Angry messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/angryIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/angryText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/angryImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/angryTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/angryText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/angryIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="birthdayLayout">
+
+                <ImageView
+                    android:id="@+id/birthdayImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/birthdaypng" />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/birthdayImage"
+                    android:text="Birthday messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/birthdayIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/birthdayImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/birthdayTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/birthdayIcon"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="caringLayout">
+
+                <ImageView
+                    android:id="@+id/caringImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/caring" />
+
+                <TextView
+                    android:id="@+id/caringText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/caringImage"
+                    android:text="Caring messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/caringIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/caringText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/caringImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/caringTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/caringText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/caringIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="christmasLayout">
+
+                <ImageView
+                    android:id="@+id/christmasImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/christmas" />
+
+                <TextView
+                    android:id="@+id/christmasText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/christmasImage"
+                    android:text="Christmas messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/christmasIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/christmasText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/christmasImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/christmasTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/christmasText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/christmasIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="cuteLayout">
+
+                <ImageView
+                    android:id="@+id/cuteImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cute" />
+
+                <TextView
+                    android:id="@+id/cuteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/cuteImage"
+                    android:text="Cute messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/cuteIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/cuteText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/cuteImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/cuteTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cuteText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cuteIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="diwaliLayout">
+
+                <ImageView
+                    android:id="@+id/diwaliImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/diwali" />
+
+                <TextView
+                    android:id="@+id/diwaliText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/diwaliImage"
+                    android:text="Diwali messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/diwaliIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/diwaliText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/diwaliImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/diwaliTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diwaliText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/diwaliIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="dreamLayout">
+
+                <ImageView
+                    android:id="@+id/dreamImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dream" />
+
+                <TextView
+                    android:id="@+id/dreamText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/dreamImage"
+                    android:text="Dream messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/dreamIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/dreamText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/dreamImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/dreamTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dreamText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/dreamIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="emotionalLayout">
+
+                <ImageView
+                    android:id="@+id/emotionalImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/emotional" />
+
+                <TextView
+                    android:id="@+id/emotionalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/emotionalImage"
+                    android:text="Emotional messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/emotionalIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/emotionalText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/emotionalImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/emotionalTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emotionalText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/emotionalIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="examLayout">
+
+                <ImageView
+                    android:id="@+id/examImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/exam" />
+
+                <TextView
+                    android:id="@+id/examText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/examImage"
+                    android:text="Exam messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/examIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/examText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/examImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/examTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/examText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/examIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="forgetLayout">
+
+                <ImageView
+                    android:id="@+id/forgetImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/forget" />
+
+                <TextView
+                    android:id="@+id/forgetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/forgetImage"
+                    android:text="Forget messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/forgetIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/forgetText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/forgetImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/forgetTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forgetText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/forgetIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="friendshipLayout">
+
+                <ImageView
+                    android:id="@+id/friendshipImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/friendship" />
+
+                <TextView
+                    android:id="@+id/friendshipText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/friendshipImage"
+                    android:text="Friendship messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/friendshipIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/friendshipText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/friendshipImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/friendshipTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/friendshipText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/friendshipIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="funnyLayout">
+
+                <ImageView
+                    android:id="@+id/funnyImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/funny" />
+
+                <TextView
+                    android:id="@+id/funnyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/funnyImage"
+                    android:text="Funny messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/funnyIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/funnyText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/funnyImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/funnyTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/funnyText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/funnyIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="goodMorningLayout">
+
+                <ImageView
+                    android:id="@+id/goodMorningImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/good_morning" />
+
+                <TextView
+                    android:id="@+id/goodMorningText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/goodMorningImage"
+                    android:maxLines="1"
+                    android:text="Good Morning"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/goodMorningIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/goodMorningText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/goodMorningImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/goodMorningTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goodMorningText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/goodMorningIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="goodAfternoonLayout">
+
+                <ImageView
+                    android:id="@+id/goodAfternoonImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/good_afternoon" />
+
+                <TextView
+                    android:id="@+id/goodAfternoonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/goodAfternoonImage"
+                    android:text="Good Afternoon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/goodAfternoonIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/goodAfternoonText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/goodAfternoonImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/goodAfternoonTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goodAfternoonText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/goodAfternoonIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="goodEveningLayout">
+
+                <ImageView
+                    android:id="@+id/goodEveningImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/good_evening" />
+
+                <TextView
+                    android:id="@+id/goodEveningText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/goodEveningImage"
+                    android:text="Good Evening"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/goodEveningIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/goodEveningText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/goodEveningImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/goodEveningTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goodEveningText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/goodEveningIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="goodNightLayout">
+
+                <ImageView
+                    android:id="@+id/goodNightImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/good_night" />
+
+                <TextView
+                    android:id="@+id/goodNightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/goodNightImage"
+                    android:text="Good night messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/goodNightIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/goodNightText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/goodNightImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/goodNightTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goodNightText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/goodNightIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="jokeLayout">
+
+                <ImageView
+                    android:id="@+id/jokeImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/joke" />
+
+                <TextView
+                    android:id="@+id/jokeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/jokeImage"
+                    android:text="Joke messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/jokeIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/jokeText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/jokeImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/jokeTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jokeText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/jokeIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="loveLayout">
+
+                <ImageView
+                    android:id="@+id/loveImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/love" />
+
+                <TextView
+                    android:id="@+id/loveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/loveImage"
+                    android:text="Love messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/loveIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/loveText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/loveImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/loveTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loveText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/loveIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="missingYouLayout">
+
+                <ImageView
+                    android:id="@+id/missingYouImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/missing_you" />
+
+                <TextView
+                    android:id="@+id/missingYouText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/missingYouImage"
+                    android:text="Missing you messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/missingYouIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/missingYouText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/missingYouImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/missingYouTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/missingYouText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/missingYouIcon"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="newYearLayout">
+
+                <ImageView
+                    android:id="@+id/newYearImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/new_year" />
+
+                <TextView
+                    android:id="@+id/newYearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/newYearImage"
+                    android:text="New Year messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/newYearIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/newYearText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/newYearImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/newYearTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newYearText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/newYearIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="prayerLayout">
+
+                <ImageView
+                    android:id="@+id/prayerImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prayer" />
+
+                <TextView
+                    android:id="@+id/prayerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/prayerImage"
+                    android:text="Prayer messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/prayerIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/prayerText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/prayerImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/prayerTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prayerText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/prayerIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="sorryLayout">
+
+                <ImageView
+                    android:id="@+id/sorryImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sorry" />
+
+                <TextView
+                    android:id="@+id/sorryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/sorryImage"
+                    android:text="Sorry messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/sorryIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/sorryText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/sorryImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/sorryTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sorryText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sorryIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/list_select"
+                android:clickable="true"
+                android:onClick="valentineLayout">
+
+                <ImageView
+                    android:id="@+id/valentineImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/valentine" />
+
+                <TextView
+                    android:id="@+id/valentineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/valentineImage"
+                    android:text="Valentine's day messages"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/valentineIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/valentineText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/valentineImage"
+                    android:src="@drawable/message_round_icon" />
+
+                <TextView
+                    android:id="@+id/valentineTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/valentineText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/valentineIcon"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#50FF9800"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="92dp"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>
